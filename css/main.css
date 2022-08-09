@@ -1,0 +1,53 @@
+/* основоной цвет текста color: #000000; */
+/* вторичный цвет rgba(0, 0, 0, 0.8); */
+/* белый color: #FFFFFF; */
+/* акцент color: #18A0FB; */
+/* вторичный цвет фона background: #F5F5F5; */
+
+
+.list {
+    list-style: none;
+}
+
+
+
+
+
+/* Hero */
+
+.hero-title {
+    color: var(--title-text-color);
+}
+
+/* section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+.features-list .title {
+    color: var(--title-text-color);
+}
+
+/* Examoles */
+
+.work-list .title {
+    color: var(--title-text-color);
+}
+
+/* button */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-text-color);   
+}
+
+.button.secondary {
+    color: var(--accent-text-color);
+    background-color: var(--primary-white-color);
+}
