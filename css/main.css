@@ -139,6 +139,21 @@ body {
   text-align: center;
 }
 
+.overlay {
+  max-width: 1600px;
+  height: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 255, 255, 0.8)), url("../images/overlay.jpg");
+
+  /* background-image: url("../images/overlay.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* section */
 
 .section {
@@ -322,4 +337,125 @@ body {
 
 /* .flex-element:not(:nth-child(3n)) {
   margin-right: 30px;
+} */
+
+
+.test-button {
+display: inline-flex;
+align-items: center;
+padding: 10px 20px;
+background-color: teal;
+border-radius: 3px;
+text-decoration: none;
+cursor: pointer;
+
+}
+
+.test-button:hover,
+.test-button:focus {
+  color: aliceblue;
+  background-color: blueviolet;
+
+}
+
+.test-button::before {
+  content: "";
+  margin-right: 10px;
+   width: 20px;
+  height: 20px;
+  /* background-color: red; */
+    background-image: url('../images/logo.svg');
+  background-size: contain;
+  
+}
+
+.test-button::after {
+  content: "";
+  margin-left: 10px;
+   width: 20px;
+  height: 20px;
+  /* background-color: red; */
+    background-image: url('../images/Union-1.svg');
+  background-size: contain;
+  
+}
+
+.test-list {
+  
+  display: flex;
+  list-style: none;
+  padding: 0;
+
+}
+
+.test-item {
+  width: 350px;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 4px;
+box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+
+}
+
+.test-list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  outline: 1px solid red;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: red;
+
+}
+
+.icon-delivery::before {
+ background-image: url('../images/Rectangle.png');
+}
+
+.icon-mobile::before {
+ background-image: url('../images/Union-1.svg');
+}
+
+/* .test-list-item:nth-child(1)::before {
+  background-image: url('../images/Rectangle.png');
+}
+.test-list-item:nth-child(2)::before {
+  background-image: url('../images/Union-1.svg');
+} */
+
+.test-list-item > .test-title {
+  margin-top: 0;
+}
+
+.test-list-item > .test-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.test-link {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url('../images/Union-1.svg');
+  background-color: red;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+.test-link:hover,
+.test-link:focus {
+  background-color: #18a0fb;
+}
+
+
+/* .test-button > .icon {
+  width: 20px;
+  height: 20px;
+  
+  outline: 1xp solid black;
+  background-image: url('../images/logo.svg');
+  background-size: contain;
 } */
